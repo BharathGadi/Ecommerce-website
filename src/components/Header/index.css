@@ -163,3 +163,9 @@
 .nav-bar-image {
   width: 24px;
 }
+
+.cart-number {
+  background-color: aliceblue;
+  border-radius: 50%;
+  color: black;
+}

@@ -9,6 +9,8 @@ import SimilarProductItem from '../SimilarProductItem'
 
 import './index.css'
 
+const cart11 = []
+
 const apiStatusConstants = {
   initial: 'INITIAL',
   success: 'SUCCESS',
@@ -42,7 +44,6 @@ class ProductItemDetails extends Component {
 
   getProductData = async () => {
     const {match} = this.props
-    // console.log(this.props)
     const {params} = match
     const {id} = params
 
@@ -206,7 +207,7 @@ class ProductItemDetails extends Component {
   render() {
     return (
       <>
-        <Header />
+        <Header d={cart11} />
         <div className="product-item-details-container">
           {this.renderProductDetails()}
         </div>
